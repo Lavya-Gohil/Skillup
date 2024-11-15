@@ -19,7 +19,7 @@
     <section>
         <div class="video-background">
             <video autoplay loop muted>
-                <source src="background.mp4" type="video/mp4">
+                <source src="python.mp4" type="video/mp4">
             </video>
         </div>
         <h2>Python Programming Course</h2>
@@ -27,32 +27,134 @@
         <div class="chapter">
             <h3>Chapter 1: Introduction to Python</h3>
             <p>Welcome to Python Programming! In this chapter, you will learn how to set up Python on your computer, write your first program, and understand the basics of Python syntax.</p>
-            <h4>Topics Covered</h4>
-            <ul>
-                <li>Setting up Python</li>
-                <li>Writing your first Python program</li>
-                <li>Basic Python syntax</li>
-            </ul>
-            <h4>Setting up Python</h4>
-            <p>To set up Python on your computer, visit the <a href="https://www.python.org/downloads/" target="_blank">official Python website</a> and download the installer for your operating system.</p>
-            <h4>Writing Your First Program</h4>
-            <p>Open a text editor or IDE and write the following code:</p>
-            <pre><code>print("Hello, World!")</code></pre>
-            <p>Save the file with a .py extension and run it using the Python interpreter.</p>
+            
+            <div class="topics-covered">
+                <h4>Topics Covered</h4>
+                <p>Setting up Python, Writing your first Python program, Basic Python syntax</p>
+            </div>
+            
+            <div class="section">
+                <h4>Setting up Python</h4>
+                <p>To set up Python on your computer, visit the <a href="https://www.python.org/downloads/" target="_blank">official Python website</a> and download the installer for your operating system.</p>
+            </div>
+            
+            <div class="section">
+                <h4>Writing Your First Program</h4>
+                <p>Open a text editor or IDE and write the following code:</p>
+                <pre><code>print("Hello, World!")</code></pre>
+                <p>Save the file with a .py extension and run it using the Python interpreter by typing <code>python filename.py</code> in the command line.</p>
+            </div>
+            
+            <div class="section">
+                <h4>Basic Python Syntax</h4>
+                <p>Understanding the basic syntax of Python is essential:</p>
+                <p><strong>Variables:</strong> Used to store data values.</p>
+                <pre><code>x = 5; name = "Alice"</code></pre>
+                <p><strong>Data Types:</strong> Common types include <code>(int, float, str, list, dict)</code>.</p>
+                <p><strong>Operators:</strong> Includes <code>arithmetic (+,-,*,/), comparison (==, !=, >, <), and logical (nd, or, not)</code> operators.</p>
+                <p><strong>Control Structures:</strong></p>
+                <pre><code>
+        # If Statements
+        if x > 0:
+            print("Positive number")
+        elif x == 0:    
+            print("Zero")
+        else:
+            print("Negative number")
+        
+        # Loops
+        for i in range(5):
+            print(i)
+        
+        while x > 0:
+            print(x)
+            x -= 1
+        </code></pre>
+            </div>
+            
+            <div class="section">
+                <h4>Functions</h4>
+                <p>Functions are defined using the <code>def</code> keyword:</p>
+                <pre><code>def greet(name):
+            return f"Hello, {name}!"
+        
+        print(greet("Alice"))</code></pre>
+            </div>
+            
+            <div class="section">
+                <h4>Modules and Packages</h4>
+                <p>Modules and packages are essential for organizing and reusing code:</p>
+                <p><strong>Modules:</strong> Files containing Python code that can be imported and used in other scripts.</p>
+                <pre><code>import math
+        print(math.sqrt(16))</code></pre>
+                <p><strong>Packages:</strong> Directories containing multiple modules. Use <code>pip</code> to install packages from the Python Package Index (PyPI).</p>
+            </div>
+            
+            <div class="section">
+                <h4>Error Handling</h4>
+                <p>Use <code>try</code> and <code>except</code> blocks to handle exceptions:</p>
+                <pre><code>try:
+            result = 10 / 0
+        except ZeroDivisionError:
+            print("Cannot divide by zero")</code></pre>
+            </div>
         </div>
-
+        
         <div class="chapter">
-            <h3>Chapter 2: Data Types and Variables</h3>
-            <p>Understand different data types in Python, such as integers, floats, strings, and how to use variables to store data.</p>
-            <h4>Topics Covered</h4>
-            <ul>
-                <li>Data types</li>
-                <li>Variables</li>
-                <li>Type conversion</li>
-            </ul>
-            <h4>Data Types</h4>
-            <p>Python supports various data types, including integers, floats, strings, and booleans. Here are some examples:</p>
-            <pre><code>
+            <h3>Chapter: Data Types and Variables</h3>
+            <p>Understanding data types and variables is fundamental in programming. In this chapter, you will learn about the different data types in Python and how to use variables to store data.</p>
+            
+            <div class="topics-covered">
+                <h4>Topics Covered</h4>
+                <p>What are Data Types?, Common Data Types in Python, Variables, Variable Naming Rules, Type Conversion</p>
+            </div>
+            
+            <div class="section">
+                <h4>What are Data Types?</h4>
+                <p>Data types are the classification of data items. They tell the interpreter or the compiler how the programmer intends to use the data.</p>
+            </div>
+            
+            <div class="section">
+                <h4>Common Data Types in Python</h4>
+                <p>Python supports several standard data types:</p>
+                <p><strong>Integers:</strong> Whole numbers without a fractional part.</p>
+                <pre><code>x = 10</code></pre>
+                <p><strong>Float:</strong> Numbers with a fractional part.</p>
+                <pre><code>y = 3.14</code></pre>
+                <p><strong>String:</strong> Sequence of characters.</p>
+                <pre><code>name = "Alice"</code></pre>
+                <p><strong>List:</strong> Ordered collection of items.</p>
+                <pre><code>fruits = ["apple", "banana", "cherry"]</code></pre>
+                <p><strong>Tuple:</strong> Ordered collection of items that is immutable.</p>
+                <pre><code>coordinates = (10, 20)</code></pre>
+                <p><strong>Dictionary:</strong> Collection of key-value pairs.</p>
+                <pre><code>person = {"name": "Alice", "age": 25}</code></pre>
+                <p><strong>Boolean:</strong> Represents one of two values: <code>True</code> or <code>False</code>.</p>
+                <pre><code>is_student = True</code></pre>
+            </div>
+            
+            <div class="section">
+                <h4>Variables</h4>
+                <p>Variables are used to store data that can be referenced and manipulated in a program. They have a name and hold a value.</p>
+            </div>
+            
+            <div class="section">
+                <h4>Variable Naming Rules</h4>
+                <p>When naming variables in Python, follow these rules:</p>
+                <p>Variable names can contain letters, numbers, and underscores. Variable names must start with a letter or an underscore (_). Variable names are case-sensitive. Variable names cannot be Python keywords.</p>
+            </div>
+            
+            <div class="section">
+                <h4>Type Conversion</h4>
+                <p>Type conversion is the process of converting a value from one data type to another. Python provides several functions for this:</p>
+                <p><strong>int():</strong> Converts a value to an integer.</p>
+                <pre><code>number = int("10")</code></pre>
+                <p><strong>float():</strong> Converts a value to a float.</p>
+                <pre><code>pi = float("3.14")</code></pre>
+                <p><strong>str():</strong> Converts a value to a string.</p>
+                <pre><code>text = str(10)</code></pre>
+            </div>
+        
 # Integer
 x = 10
 
@@ -64,7 +166,6 @@ name = "Alice"
 
 # Boolean
 is_student = True
-            </code></pre>
             <h4>Variables</h4>
             <p>Variables are used to store data that can be referenced and manipulated in your programs. To create a variable, simply assign a value to a name:</p>
             <pre><code>

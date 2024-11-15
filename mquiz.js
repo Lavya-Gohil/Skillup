@@ -3,7 +3,11 @@ const correctAnswers = {
     q1: "b",
     q2: "a",
     q3: "b",
-    q4: "b"
+    q4: "b",
+    q5: "a",
+    q6: "a",
+    q7: "b",
+    q8: "c"
 };
 
 // Handle quiz submission
