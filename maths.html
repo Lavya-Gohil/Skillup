@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Programming Course - SkillUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SkillUp</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="video-background">
+            <video autoplay loop muted>
+                <source src="background.mp4" type="video/mp4">
+            </video>
+        </div>
+        <h2>Maths Course Class 10-12</h2>
+
+        <div class="chapter">
+            <h3>Chapter 1: Algebra</h3>
+            <p>Understand the basics of algebra, including variables, equations, and functions.
+            </p>
+            <h4>Topics Covered</h4>
+            <ul>
+                <li>Variables</li>
+                <li>Equations</li>
+                <li>Functions</li>
+            </ul>
+            <h4>Variables</h4>
+            <p>Variables are symbols used to represent numbers. Example:</p>
+            <pre><code>x + 2 = 5</code></pre>
+            <h4>Equations</h4>
+            <p>Equations are mathematical statements that show the equality of two expressions. Example:</p>
+            <pre><code>2x + 3 = 7</code></pre>
+            <h4>Functions</h4>
+            <p>Functions relate inputs to outputs. Example:</p>
+            <pre><code>f(x) = 2x + 1</code></pre>
+        </div>
+
+        <div class="chapter">
+            <h3>Chapter 2: Geometry</h3>
+            <p>Learn about different shapes, their properties, and how to calculate their area and perimeter.</p>
+            <h4>Topics Covered</h4>
+            <ul>
+                <li>Triangles</li>
+                <li>Circles</li>
+                <li>Polygons</li>
+            </ul>
+            <h4>Triangles</h4>
+            <p>Triangles have three sides and three angles. The sum of the angles is always 180 degrees. Example:</p>
+            <pre><code>Area of a triangle = 0.5 * base * height</code></pre>
+            <h4>Circles</h4>
+            <p>Circles are shapes with all points equidistant from the center. Example:</p>
+            <pre><code>Circumference = 2 * π * radius</code></pre>
+        </div>
+
+        <div class="chapter">
+            <h3>Chapter 3: Trigonometry</h3>
+            <p>Discover the relationships between the angles and sides of triangles.</p>
+            <h4>Topics Covered</h4>
+            <ul>
+                <li>Sine, Cosine, Tangent</li>
+                <li>Pythagorean Theorem</li>
+            </ul>
+            <h4>Sine, Cosine, Tangent</h4>
+            <p>These functions relate the angles of a triangle to the lengths of its sides. Example:</p>
+            <pre><code>sin(θ) = opposite / hypotenuse</code></pre>
+            <pre><code>cos(θ) = adjecent / hypotenuse</code></pre>
+            <pre><code>tan(θ) = opposite / adjecent</code></pre>
+            <h4>Pythagorean Theorem</h4>
+            <p>The Pythagorean theorem relates the lengths of the sides of a right triangle. Example:</p>
+            <pre><code>a² + b² = c²</code></pre>
+        </div>
+
+        <div class="chapter">
+            <h3>Chapter 4: Calculus</h3>
+            <h4>Topics Covered</h4>
+            <ul>
+                <li>1. Fundamental Concepts</li>
+                <li>2. Differential Calculus (Derivatives)</li>
+                <li>3. Integral Calculus (Integrals)</li>
+                <li>4. Applications of Calculus</li>
+                <li>5. Key Theorems and Concepts</li>
+                <li>6. Common Functions and Their Derivatives/Integrals</li>
+            </ul>
+            <h4>Limit</h4>
+            <p>The limit describes the value that a function approaches as the input approaches a particular point.</p>
+            <p>Definition: lim ⁡ 𝑥 → 𝑎 𝑓(𝑥) = 𝐿 lim x→a ​ f(x)=L means that as 𝑥 approaches 𝑎, 𝑓(𝑥) f(x) approaches 𝐿.</p>
+            <h4>Continuity:</h4>
+            <p>A function is continuous at a point 𝑥 = 𝑎  if</p>
+            <pre><code>
+                f(a) is defined. 
+                lim x→a ​ f(x) exists. 
+                lim x→a ​ f(x)=f(a).
+            </code></pre>
+            <p>Discontinuity occurs when one of these conditions is violated.</p>
+        </div>
+
+        <div class="center-container">
+            <button onclick="redirectToQuiz()">Start Quiz</button>
+        </div>
+    
+        <script>
+            function redirectToQuiz() {
+                window.location.href = "mquiz.html"; // Replace with the path to your quiz page
+            }
+        </script>
+    </section>
+
+        
+    <script src="script.js"></script>
+</body>
+</html>
